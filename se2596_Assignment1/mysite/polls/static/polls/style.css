@@ -1,0 +1,8 @@
+li a {
+    color: green;
+}
+
+body {
+    background: rgb(230, 230, 230) url("images/background.webp") no-repeat;
+    background-size: cover; /* Adjust this property as needed */
+}
