@@ -22,13 +22,13 @@ script:
 after_script:
   - coveralls --service=github
 
-#deploy:
-#  provider: elasticbeanstalk
-#  access_key_id: $access_key_id
-#  secret_access_key: $secret_access_key
-#  region: "us-east-1"
-#  app: "app2"
-#  env: "staging"
-#  bucket_name: "elasticbeanstalk-us-east-1-905418363028"
-#  on:
-#    branch: main
+deploy:
+ provider: elasticbeanstalk
+ access_key_id: $access_key_id
+ secret_access_key: $secret_access_key
+ region: "us-east-1"
+ app: "app2_siri"
+ env: "app2-env-siri"
+ bucket_name: "elasticbeanstalk-us-east-1-905418363028"
+ on:
+   branch: main
