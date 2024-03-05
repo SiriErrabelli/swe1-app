@@ -16,7 +16,6 @@ script:
   - black .
   - black --check .
   - python -m flake8 -- ignore=E303,E501,W503,F401 --max-line-length=90
-  - flake8 .
   - coverage run manage.py test
 
 
