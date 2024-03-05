@@ -116,7 +116,7 @@ class QuestionDetailViewTests(TestCase):
         url = reverse("polls:detail", args=(future_question.id,))
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
-
+# hi
     def test_past_question(self):
         """
         The detail view of a question with a pub_date in the past
